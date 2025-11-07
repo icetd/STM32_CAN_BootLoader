@@ -49,12 +49,12 @@ Flash Memory Layout (STM32F103CBT6, 128 KB Flash)
 
 #define RAM_START  0x20000000U  // SRAM Start
 #define RAM_SIZE   (20 * 1024)  // 20KB RAM
-#define FLASH_SIZE (128 * 1024) // 1MB Flash
+#define FLASH_SIZE (128 * 1024) // 128K Flash
 
-#define BOOTLOADER_SIZE   (32 * 1024)                    // 32KB
-#define APP_SIZE          (60 * 1024)                    // 60KB
+#define BOOTLOADER_SIZE   (32 * 1024)
+#define APP_SIZE          (60 * 1024)
 #define APP_START_ADDRESS 0x08008000                     // Application start
-#define APP_END_ADDRESS   (APP_START_ADDRESS + APP_SIZE) // 0x08017000
+#define APP_END_ADDRESS   (APP_START_ADDRESS + APP_SIZE)
 #define CRC_ADDRESS       (APP_END_ADDRESS + 4)
 
 #endif
