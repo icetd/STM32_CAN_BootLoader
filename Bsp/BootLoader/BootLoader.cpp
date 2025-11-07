@@ -104,7 +104,7 @@ void Bootloader::run()
                 uint32_t appEntry = *(uint32_t *)(APP_START_ADDRESS + 4);
 
                 // Complete preparation before jump
-                __disable_irq(); // Disable all interrupts
+                __disable_irq(); // Disable all interrupts (SO need __enable_irq() in app)
 
                 // Reset all peripherals
                 HAL_RCC_DeInit();
