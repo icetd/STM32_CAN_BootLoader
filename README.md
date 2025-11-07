@@ -1,7 +1,10 @@
 # STM32 CAN BootLoader
 
 CAN bus bootloader with firmware update and application validation.
+
 **Tested on STM32F412CGU6**
+
+**Tested on STM32F103CBT6**
 
 ## Features
 
