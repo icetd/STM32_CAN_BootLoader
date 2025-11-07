@@ -74,7 +74,19 @@ Flash Memory Layout (STM32F412, 1 MB Flash)
 - Properly configured linker script
 - Application start address set to 0x08008000
 
+## Application Notes
 
+- **Configure your offset; you can also use the ld file for configuration.**
+
+```c
+SCB->VTOR = FLASH_BASE | 0x8000;  
+```
+
+- **You must enable interrupts if you use them.**
+
+```c
+__enable_irq(); 
+```
 
 ## Loader CommandLine App
 
