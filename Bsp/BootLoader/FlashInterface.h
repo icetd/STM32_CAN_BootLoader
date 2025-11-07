@@ -1,5 +1,4 @@
 #pragma once
-#include "stm32f4xx_hal.h" // 可在 CMake 或编译时定义 STM32 系列
 #include <cstdint>
 
 class FlashInterface {
