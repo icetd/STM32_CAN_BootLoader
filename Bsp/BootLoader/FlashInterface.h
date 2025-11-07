@@ -1,7 +1,8 @@
 #pragma once
 #include <cstdint>
 
-class FlashInterface {
+class FlashInterface
+{
 public:
     FlashInterface(uint32_t appStart, uint32_t appEnd);
 

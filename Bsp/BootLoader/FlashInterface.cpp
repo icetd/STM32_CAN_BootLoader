@@ -7,8 +7,7 @@
 #include "stm32f1xx_hal.h"
 #endif
 
-FlashInterface::FlashInterface(uint32_t appStart, uint32_t appEnd)
-    : appStart_(appStart), appEnd_(appEnd), flashAddress_(appStart) 
+FlashInterface::FlashInterface(uint32_t appStart, uint32_t appEnd) : appStart_(appStart), appEnd_(appEnd), flashAddress_(appStart)
 {
     // Ensure application start address is after bootloader
     if (appStart_ < APP_START_ADDRESS) {
